@@ -23,7 +23,8 @@ TOKEN = os.getenv("TOKEN")
 # DB = os.getenv("DB")
 DATABASE_URL = os.environ["DATABASE_URL"]
 
-get_db = create_engine(DATABASE_URL)
+#get_db = create_engine(DATABASE_URL)
+db = create_engine(DATABASE_URL)
 base = declarative_base()
 
 
